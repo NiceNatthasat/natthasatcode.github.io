@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-  
   body .showcase {
     background-color: black;
     color: aliceblue;
+  }
+  .card-img-top{
+    max-width: 200px;
   }
 </style>
 
@@ -27,8 +29,8 @@
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Resume</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
@@ -68,17 +70,29 @@
     </div>
   </section> -->
   <section class="showcase">
-    <div class="container-fluid p-0">
-      <div class="row g-0">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/skill1.png');">
+    <section id="skill">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-lg-6 order-lg-2 text-white showcase-img"">
+            <div class="card-column">
+              <img class="card-img-top" src="\natthasatcode.github.io\img\html.png" alt="">
+              <img class="card-img-top" src="\natthasatcode.github.io\img\css.webp" alt="">
+              <img class="card-img-top" src="\natthasatcode.github.io\img\javascript.png" style="margin-top: 50px;" alt="">
+              <img class="card-img-top" src="\natthasatcode.github.io\img\bootstrap.png" alt="">
+              <!-- <div class="card-body">
+                  <h5 class="text-center">Programming language</h5>
+                  <h4 class="title-course text-center"></h4>
+              </div> -->
+          </div>
+          </div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Skills</h2>
+            <p class="lead mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo est rerum, et magnam animi
+              accusamus atque explicabo facilis! Minus, perferendis.</p>
+          </div>
         </div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Skills</h2>
-          <p class="lead mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo est rerum, et magnam animi
-            accusamus atque explicabo facilis! Minus, perferendis.</p>
-        </div>
-      </div>
-
+    </section>
+    <section id="project">
       <div class="row g-0">
         <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/showcase-2.jpg');"></div>
         <div class="col-lg-6 my-auto showcase-text">
@@ -90,7 +104,8 @@
           <a href="project.html">See more</a>
         </div>
       </div>
-
+    </section>
+    <section id="resume">
       <div class="row g-0">
         <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/showcase-3.jpg');">
         </div>
@@ -102,7 +117,9 @@
           <a href="resume.html">See more</a>
         </div>
       </div>
-    </div>
+      </div>
+    </section>
+  </section>
   </section>
   <script>
     window.addEventListener("scroll", function () {
